@@ -3,9 +3,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes.analysis import router as analysis_router
 
 app = FastAPI(title="Resume Analyzer API")
+origins = [
+    "http://localhost:5173",
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True,
