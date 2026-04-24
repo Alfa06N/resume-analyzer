@@ -6,6 +6,8 @@ app = FastAPI(title="Resume Analyzer API")
 origins = [
     "http://localhost:5173",
     "https://resume-analyzer-tawny-six.vercel.app"
+    "resume-analyzer-a52yvsiqy-nicolas-alfaros-projects.vercel.app"
+    "resume-analyzer-git-main-nicolas-alfaros-projects.vercel.app"
 ]
 app.add_middleware(
     CORSMiddleware,
