@@ -4,9 +4,15 @@ import { motion } from "motion-v";
 const currentYear = new Date().getFullYear();
 
 const socialLinks = [
-  { title: "GitHub", url: "https://github.com/Alfa06N" },
-  { title: "LinkedIn", url: "https://linkedin.com/in/nicolás-alfaro" },
-  { title: "Portfolio", url: "https://nicolasalfaro.com" },
+  { title: "GitHub", url: "https://github.com/Alfa06N/resume-analyzer" },
+  {
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/nicol%C3%A1s-alfaro-guzm%C3%A1n-7a9465270/",
+  },
+  {
+    title: "Portfolio",
+    url: "https://portfolio-phi-khaki-segxmki8ey.vercel.app/#about",
+  },
 ];
 </script>
 
@@ -53,7 +59,6 @@ const socialLinks = [
               target="_blank"
               class="inline-flex items-center gap-2 duration-200 hover:text-primary transition-colors"
             >
-              <!-- <component :is="link.icon" class="size-4" /> -->
               {{ link.title }}
             </a>
           </li>
