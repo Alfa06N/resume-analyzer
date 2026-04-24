@@ -5,7 +5,7 @@ from app.api.routes.analysis import router as analysis_router
 app = FastAPI(title="Resume Analyzer API")
 origins = [
     "http://localhost:5173",
-    "https://resume-analyzer-tawny-six.vercel.app/"
+    "https://resume-analyzer-tawny-six.vercel.app"
 ]
 app.add_middleware(
     CORSMiddleware,
